@@ -1,6 +1,5 @@
-This was a project where the objective was to implement Rock-Paper_Scissors on a microbit.
+This was a project where the objective was to implement Rock-Paper_Scissors on a microbit. The microbit sends messages as byte strings via the radio. The file 'microbit_comms_RPS.py' contains all functions written for the project.
 
-The microbit sends messages as byte strings via the radio.
 I implemented functions that:
 - Selected an opponent
 - Establishing a radio address the two microbits can use to communicate
