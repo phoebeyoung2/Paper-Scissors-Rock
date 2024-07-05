@@ -1,5 +1,5 @@
-import microbit # Do not change these to star imports, the test code neds them
-import utime    # like this to work properly!
+import microbit 
+import utime    
 import radio
 
 # Global constants
@@ -8,7 +8,7 @@ PAPER = microbit.Image('99999:90009:90009:90009:99999')
 SCISSORS = microbit.Image('99009:99090:00900:99090:99009')
 RPS = (b'R', b'P', b'S')
 radio_address = b'0000' #Default value and needs to be changed in the main function
-myID = b'06' # TODO: change this to be the same as your assigned micro:bit number
+myID = b'00' # Change this to be the same as your assigned micro:bit number
 
 def choose_opponent():
     # """ Return the opponent id from button presses
@@ -24,7 +24,7 @@ def choose_opponent():
     # Button B is used to 'lock in' the digit and move on
     # """
     #
-    # This function is complete.
+    # This function was completed by my lecturer.
     
     # Initialization
     num = [0]*2
@@ -239,10 +239,9 @@ def resolve(my, opp):
     # solve(b'R', b'S') returns 1 (Win)
     # solve(b'R', b'R') returns 0 (Draw)
     #
-    # Author: Phoebe Young
     # """
     #
-    # This function is complete.
+    # This function was completed by my lecturer.
     
     # Use fancy list indexing tricks to resolve the match
     diff = RPS.index(my) - RPS.index(opp)
@@ -281,7 +280,7 @@ def display_score(my_score,opp_score,round_number, times=3):
     # Resolves the game when one player is deemed a winner or loser. 
     # Resets the microbit after the game is complete.
     #
-    # This function is complete.
+    # This function was completed by my lecturer.
 
     screen_off = microbit.Image(':'.join(['0'*5]*5))
     microbit.display.show([screen_off, str(my_score)]*times)
